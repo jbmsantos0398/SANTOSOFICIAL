@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <body>
 
-<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:300px;" id="mySidebar">
   <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()">Close &times;</button>
 
 
@@ -61,13 +61,16 @@ body {font-family: Arial;}
 
 
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'London')">MENU</button>
-  <button class="tablinks" onclick="openCity(event, 'Paris')">PASTAS</button>
-  <button class="tablinks" onclick="openCity(event, 'Tokyo')">LINKS</button>
-  <button class="tablinks" onclick="openCity(event, 'OUTROS')">OUTROS</button>
+  <button class="tablinks" onclick="openCity(event, 'MENU')">MENU</button>
+  <button class="tablinks" onclick="openCity(event, 'PASTA 01')">PASTA 01</button>
+  <button class="tablinks" onclick="openCity(event, 'PASTA 02')">PASTA 02</button>
+  <button class="tablinks" onclick="openCity(event, 'PASTA 03')">PASTA 03</button>
+  <button class="tablinks" onclick="openCity(event, 'X')">X</button>
+  <button class="tablinks" onclick="openCity(event, 'XX')">XX</button>
+  <button class="tablinks" onclick="openCity(event, 'XXX')">XXX</button>
 </div>
 
-<div id="London" class="tabcontent">
+<div id="MENU" class="tabcontent">
   <h3>MENU</h3>
   <p>London is the capital city of England.</p>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
@@ -75,25 +78,46 @@ body {font-family: Arial;}
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div id="Paris" class="tabcontent">
-  <h3>PASTAS</h3>
+<div id="PASTA 01" class="tabcontent">
+  <h3>PASTA 01</h3>
   <p>Paris is the capital of France.</p> 
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div id="Tokyo" class="tabcontent">
-  <h3>LINKS</h3>
+<div id="PASTA 02" class="tabcontent">
+  <h3>PASTA 02</h3>
   <p>Tokyo is the capital of Japan.</p>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
 </div>
 
-<div id="OUTROS" class="tabcontent">
-  <h3>OUTROS</h3>
+<div id="PASTA 03" class="tabcontent">
+  <h3>PASTA 03</h3>
   <p>Tokyo is the capital of Japan.</p>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="X" class="tabcontent">
+  <h3>X</h3>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="XX" class="tabcontent">
+  <h3>XX</h3>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+</div>
+
+<div id="XXX" class="tabcontent">
+  <h3>XXX</h3>
   <a href="#" class="w3-bar-item w3-button">Link 1</a>
   <a href="#" class="w3-bar-item w3-button">Link 2</a>
   <a href="#" class="w3-bar-item w3-button">Link 3</a>
@@ -124,7 +148,7 @@ function openCity(evt, cityName) {
 
 </div>
 
-<div class="w3-main" style="margin-left:200px">
+<div class="w3-main" style="margin-left:305px">
 <div class="w3-teal">
   <button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()">&#9776;</button>
   <div class="w3-container">
@@ -132,7 +156,7 @@ function openCity(evt, cityName) {
   </div>
 </div>
 
-<div class="w3-container">
+
   <h3>Responsive Sidebar</h3>
   <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
   <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
