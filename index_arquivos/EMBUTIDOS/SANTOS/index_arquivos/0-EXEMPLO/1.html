@@ -37,7 +37,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_hide&stacked
 <!DOCTYPE html><html><title></title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"><body>
-<div class="w3-sidebar w3-bar-block w3-collapse w3-card w3-animate-left" style="width:200px;" id="mySidebar">
+<div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:200px;" id="mySidebar">
 <button class="w3-bar-item w3-button w3-large w3-hide-large" onclick="w3_close()"><FONT COLOR="red">Feche &times;</FONT></button>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
@@ -93,7 +93,7 @@ https://www.w3schools.com/w3css/tryit.asp?filename=tryw3css_sidebar_hide&stacked
 
 <center><button class="w3-button w3-teal w3-xlarge w3-hide-large" onclick="w3_open()"><b>&#9776; C A T E G O R I A S &#9776;</b></button></center>
 
-</div><div class="w3-container">
+</div>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
@@ -200,9 +200,90 @@ document.write('  '+todaysDate);
 <!--##############################################################################-->
 <!--##############################################################################-->
 <!---------------------------------------------------------------------------------->
+<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width, initial-scale=1"><style>
+* {
+  box-sizing: border-box;
+}
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 4px solid red;
+  margin-bottom: 12px;
+}
+#myUL {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#myUL li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: blue;
+  display: block
+}
+#myUL li a:hover:not(.header) {
+  background-color: #eee;
+}
+</style></head><body><input type="text" id="myInput" onkeyup="myFunction()" placeholder="Pesquisa.." title="Type in a name"><ul id="myUL">
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!----------------------------- _self ------ _blank 
+<!------------------------------------------------------------------>
+<li><a href="
+LINK🔴
+" target="_blank"><b><FONT SIZE=+2>
+NOME🔴
+</b><FONT COLOR="#FF0000"> (<i>
+VERMELHO🔴
+</i>)</FONT></FONT></a></li>
+<!------------------------------------------------------------------>
+<li><a href="
+LINK🔴
+" target="_blank"><b><FONT SIZE=+2>
+NOME🔴
+</b><FONT COLOR="#FF0000"> (<i>
+VERMELHO🔴
+</i>)</FONT></FONT></a></li>
+<!------------------------------------------------------------------>
 
 
-CORPO
+
+
+
+
+
+
+<li><a href="
+LINK🔴
+" target="_blank"><b><FONT SIZE=+2>
+NOME🔴
+</b><FONT COLOR="#FF0000"> (<i>
+VERMELHO🔴
+</i>)</FONT></FONT></a></li>
+<!------------------------------------------------------------------>
+<li><a href="
+LINK🔴
+" target="_blank"><b><FONT SIZE=+2>
+NOME🔴
+</b><FONT COLOR="#FF0000"> (<i>
+VERMELHO🔴
+</i>)</FONT></FONT></a></li>
+<!------------------------------------------------------------------>
 
 
 
@@ -212,12 +293,30 @@ CORPO
 
 
 
-
-
-
-
-
-
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+<!---------------------------------------------------------------------------------->
+</ul><script>
+function myFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("myInput");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("myUL");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "";
+        } else {
+            li[i].style.display = "none";
+        }
+    }
+}
+</script></body></html>
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
 <!---------------------------------------------------------------------------------->
